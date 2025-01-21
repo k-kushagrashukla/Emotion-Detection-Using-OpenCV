@@ -21,7 +21,9 @@ deepFace: detecting emotion through pretrained data model.
 face_cascade = cv2.CascadeClassifier(cv2.data.haarcascades + 'haarcascade_frontalface_default.xml')
 ```
 `cv2.cascadeclassifier():` Haar Cascade ek machine learning-based approach hai, jo haar-like features ka use karke objects detect karta hai (is case me faces).
+
 `cv2.data.haarcascades:` Iska use karke hum haarcascade_frontalface_default.xml file ko access karte hain.
+
 `haarcascade_frontalface_default.xml:`Yeh model specifically frontal faces detect karne ke liye banaya gaya hai.
 
 ---
@@ -49,7 +51,9 @@ hamlog convert karte hai apni normal image ko gray color mein , because hrayscal
 faces = face_cascade.detectMultiScale(gray_frame, scaleFactor=1.1, minNeighbors=5, minSize=(30, 30))
 ```
 `scaleFactor:` in every step hame image ko kitna chotha karna hai .
+
 `minNeighbors:` face ko detect karne ke liye valid neighbors.
+
 `minSize:`minimum size jo ek face ko kam se kam chahiye.
 
 ---
@@ -58,6 +62,7 @@ faces = face_cascade.detectMultiScale(gray_frame, scaleFactor=1.1, minNeighbors=
         face_roi = frame[y:y + h, x:x + w]
 ```
 `(x,y,w.h):` face ki x axis and y axis and height and width
+
 `roi(region of interest):` face ka main region find karna by adding y-axis with height and x-axis with width
 
 ---
