@@ -1,3 +1,7 @@
+# Emotion detection 
+- In this project we are detecting the emotion of a person using opencv stuff.
+- If you are happy , it shows happy, if sad , shows sad, if angry , it shows angry etc. things are going to detected by webcam :)
+
 # OpenCV
 openCv ek open-source library hai jo mainly computer vision aur image processing ke liye use hoti hai. Iska full form hai open source computer vision
 Iss library ka use kar ke hum videos aur images ko process kar sakte hai .
